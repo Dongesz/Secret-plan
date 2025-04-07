@@ -1,0 +1,5 @@
+Solved my first C++ LeetCode problem: Two Sum.
+Completed the following topics:
+• Conditional Programming: if, else if, switch, and the ternary operator.
+• Loops: for, while, and do-while structures.
+Didnt write code tho..

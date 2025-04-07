@@ -1,0 +1,1 @@
+Did some research on turning my console-based calculator into a desktop app using Qt. Watched an introductory video on Qt and got familiar with the basics. Feeling ready to implement it into my calculator project, but will likely get to it tomorrow.
