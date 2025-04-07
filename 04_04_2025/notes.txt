@@ -1,0 +1,47 @@
+Today im mainly learning about the Memory
+
+    Real Memory(Ram - Real Access Memory) vs Virtual Memory((2^n)-1 data range)
+
+        Virtual Memory:
+                - Not every program uses Real Memory(RAM), if they'd do so your RAM would quickly run out.
+                - The idea behind the term Virtual Memory is that it tricks your program into thinking that it owns all the memory of your computer.
+                - The view of your program has of that V memory is the Memory Map(The idea of what your program has of memory).
+                - Each program is abscracted into a proccess, each process has a memory range of (2^n)-1 while n being the number of bits your OS have.
+            My explanation: 
+                * Basically Vmemory fools your program into thinking it has controll over the entireity of the Ram((2^n)-1), that way it thinks it can do whatever it wants.
+
+            How it works: 
+                -When we create a code and build it, then a few important thing happens:
+                    * The code compiles, turning the "human code" into binary code, that the cpu can understand.
+                    * Then it stores that binary code in the the Virtual Memory.
+                    * Then your program becomes a proccess(Every proccess has a Memory Map).
+                    * After that the MMU(Memory Managment Unit), transforms the Memory Map of each proccess into the Real Memory layout that we have in ram.
+            
+            Pros of Virtual Memory:
+                - The MMU only transforms the usefull data into real RAM, and puts everything thats not usefull for our program on the hard drive.
+            
+            My explanation: 
+                * The entire program is not loaded in the RAM, the MMU filters out the "usefull", and "Not so usefull" data, this way our RAM is well organized, and fast,
+                while we still have the "Not so usefull" data stored on our HardDrive.
+
+        Memory Map:
+            structure:
+                System: *Didnt cover in the video*
+                Stack:   Local vars, function calls etc...
+                Heap:    Additional memory that can be used at runtime
+                Data:   *Didnt cover in the video*
+                Text:    The code of the program in binary format
+
+            Heap vs stack :
+                Stack: The developer doesnt have full controll of the memory lifetime, 
+                       the lifetime is controlled by the scope mechanism
+                Heap(dynamic memory): The developer has full controll over the memory lifetime,
+                      the developer can controll the lifetime through the "new" and "delete" operators
+                 My explanation: lifetime of a memory on the stack is controlled by the system,
+                    on the other hand, lifetime on the heal is controlled by the developer, you can mannualy create and delete data on the memory.
+
+
+        
+
+
+

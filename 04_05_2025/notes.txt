@@ -1,0 +1,47 @@
+Dangling pointers
+
+    3 main occurrences:
+        - Reffering to an UNINITIALIZED pointer
+        - Reffering to a DELETED pointer
+        - Reffering to a pointer thats MASTERS(the pointer ist pointing at) deleted.
+
+    Solutions:
+        - Always initialize your pointers, at least with NULLPTR
+        - Always reset pointers after returning them, also with NULLPTR
+        - If you have multiple pointers pointing at the same address,
+          make the MASTER pointers status very clear
+    
+    How to avoid Dangling Pointers:
+        - Find out if the pointers valid or not, only use it if it is
+        (you can do this with a simple if statement, and check if
+         the pointer is a nullptr or not, only use it if its not)
+
+When "new fails"
+
+    Occurrenc:
+        -happens when your program runs out of heap memory
+
+    Solutions:
+        - Use try catch to throw an exeption if the new fails 
+        - Use std::nothrow, return nullptr if the new fails
+
+Nullptr Safety
+    - Always checkif a pointer is a nullptr, only use it if it is not!
+    - You can simply check with a statement, a pointer can be converted to a bool,
+      if its valid returns true, if nullptr returns false
+
+Memory Leaks
+
+   Occurrences:
+    - Asigning a new value to a pointer, before returning the current
+    - Leaving a local scope before returning a pointers memory
+
+    Solutions:
+        -ALWAYS RETURN MEMORY AFTER DONE WORKING
+
+
+
+Random Learnings:
+    - *Using namespace std;* is not a good practise!
+    - Use "\n" insted of endl; endl isnt just a normal linebreak,
+      it also clears the buffer, useing it in every cout is bad practise!

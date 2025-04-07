@@ -1,0 +1,28 @@
+Dynamically Alocated Arrays
+    Properties:
+        - Located on the heap, not the stack!
+        - They doesnt support range based for loops and std::size because thier size is unknown at runtime, 
+          dynamic arrays only exist as type *int in the eyes of the compiler!
+        - Dynamic arrays size doesnt need to be const
+    - You can delete dynamic arrays with delete[]
+
+References
+    - A reference variable is a "reference" to an already existing variable
+    - it is created with the & operator
+    Properties:
+        - it has the exect same value as the variable its referencing
+        - changeing a reference will also affect the referenced variable
+    Uses:
+        - using refereces allow us to pass data around without the need of creating a copy every time
+    References vs Pointers:
+        They are very similar to each other, but there is a couple of key differences:
+            - you have to initialize a referece to a variable, unlike a pointer which can be a nullptr
+            - you cant make a reference refer to something else after initialization(similar to const pointers)
+            - generally its easier to access data trough refereces than pointers, because you dont have to dereference
+    We can also make Const References:
+        - That way you cannot edit the original variable, but you can still read it!
+        - You can declare it with the const keyword 
+
+
+        
+
