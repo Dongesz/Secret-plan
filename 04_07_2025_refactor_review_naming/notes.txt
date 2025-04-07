@@ -1,0 +1,24 @@
+Naming Things – Quick Guide by dongesz
+
+    Bad Naming Habits:
+        • Single-letter variable names (except loop counters like i, j)
+        • Abbreviating names: tmp, cnt, usrNm → prefer: temporary, count, userName
+        • Hungarian Notation (intCount, strName) – outdated
+        • Misleading names (e.g., list when it’s actually a vector)
+        • Inconsistent terms (loadX vs fetchY)
+
+    Good Naming Habits:
+        • Descriptive & readable: totalPrice, maxRetries
+        • Include units if relevant: delaySeconds, memoryBytes, speedKmPerHour
+        • Function names: verb + noun → loadData(), updateScore()
+        • Consistent naming across similar logic
+        • Booleans: isReady, hasAccess, shouldRetry, canMove
+
+    C++ Specific Naming Conventions:
+        • Variables: camelCase → playerScore
+        • Classes: PascalCase → GameManager
+        • Constants: ALL_CAPS_WITH_UNDERSCORES → MAX_PLAYERS
+        • Private members: _underscore or m_ prefix → _score / m_score
+        • Namespaces: short lowercase → math, graphics
+        • Enums: scoped with PascalCase → enum class Difficulty {{Easy, Medium, Hard}}
+
