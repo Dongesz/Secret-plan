@@ -16,9 +16,15 @@ Naming Things – Quick Guide by dongesz
 
     C++ Specific Naming Conventions:
         • Variables: camelCase → playerScore
-        • Classes: PascalCase → GameManager
+        • Classes: PascalCase → GameManagerD
         • Constants: ALL_CAPS_WITH_UNDERSCORES → MAX_PLAYERS
         • Private members: _underscore or m_ prefix → _score / m_score
         • Namespaces: short lowercase → math, graphics
-        • Enums: scoped with PascalCase → enum class Difficulty {{Easy, Medium, Hard}}
+        • Enums: scoped with PascalCase → enum class Difficulty {{Easy, Medium, Hard}}D
 
+
+🗓️ 4/7/25
+notes.txt: 70  — Naming conventions áttekintése, jó/rossz példák, C++-specifikus stílusjegyek (camelCase, PascalCase stb.)
+practise.cpp: 0  — Nem készült ma gyakorlat
+task1–3: 0  — Nem oldott feladatokat
+Összesen: 70 / 300 → 23.3%
